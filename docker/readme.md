@@ -1,5 +1,5 @@
 ## Build docker image from dockerfile
-docker build -t dockerfile .
+docker build -t image_name:image_tag .
 ## Remover docker image
 docker rmi image_id
 
