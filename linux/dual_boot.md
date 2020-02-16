@@ -1,2 +1,2 @@
-- ![linux-uefi](http://www.rodsbooks.com/linux-uefi/)
-- ![UEFI Windows 10 + Ubuntu](https://www.lifewire.com/create-uefi-bootable-ubuntu-usb-drive-2202085)
+- [linux-uefi](http://www.rodsbooks.com/linux-uefi/)
+- [UEFI Windows 10 + Ubuntu](https://www.lifewire.com/create-uefi-bootable-ubuntu-usb-drive-2202085)
