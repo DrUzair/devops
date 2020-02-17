@@ -26,3 +26,9 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 be161e7b70f8        38addccc7261        "nginx -g 'daemon of…"   3 minutes ago       Up 3 minutes        80/tcp                       hdp3.0_proxy1
 664250b59903        ae1d1779b081        "/usr/sbin/init"         23 minutes ago      Up 23 minutes       22/tcp, 4200/tcp, 8080/tcp   hdp3.0_privi
 ```
+5. Docker start/stop
+```shell
+docker stop hdp3.0
+docker start hdp3.0
+docker rm hdp3.0
+```
