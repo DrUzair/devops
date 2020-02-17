@@ -19,3 +19,10 @@ root@SPIMELAB: docker run -d -it --privileged --name=hdp3.0_proxy1 38addccc7261
 ```shell
 docker exec -it hdp3.0_privileged /bin/bash
 ```
+4. Check status
+```shell
+root@SPIMELAB:/# docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                        NAMES
+be161e7b70f8        38addccc7261        "nginx -g 'daemon of…"   3 minutes ago       Up 3 minutes        80/tcp                       hdp3.0_proxy1
+664250b59903        ae1d1779b081        "/usr/sbin/init"         23 minutes ago      Up 23 minutes       22/tcp, 4200/tcp, 8080/tcp   hdp3.0_privi
+```
