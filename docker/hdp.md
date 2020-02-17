@@ -36,4 +36,4 @@ docker rm hdp3.0
 ```shell
 docker rmi hortonworks/sandbox-hdp:{release}
 ```
-[More Info](#https://www.cloudera.com/tutorials/sandbox-deployment-and-install-guide/3.html#memory-for-linux)
+[More Info](https://www.cloudera.com/tutorials/sandbox-deployment-and-install-guide/3.html#memory-for-linux)
