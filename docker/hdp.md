@@ -32,3 +32,7 @@ docker stop hdp3.0
 docker start hdp3.0
 docker rm hdp3.0
 ```
+6. Remove image
+```shell
+docker rmi hortonworks/sandbox-hdp:{release}
+```
