@@ -9,7 +9,7 @@ hortonworks/sandbox-proxy   1.0                 38addccc7261        20 months ag
 ```
 2. Create a container
 ```shell 
-docker run -d -it --privileged hdp3.0_privileged /usr/sbin/init
+root@SPIMELAB:# docker run -d -it --privileged --name=hdp3.0_privileged ae1d1779b081 /usr/sbin/init
 ```
 3. Launch the hdp3.0_privileged container
 ```shell
