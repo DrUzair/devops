@@ -1,3 +1,16 @@
+# ToC
+- [Docker hub](#hub)
+- CLI (#cli)
+- Commands
+  - [pull](#pull)
+
+# Docker hub <a name='hub'></a>
+  - The [Docker hub](https://hub.docker.com/search?q=&type=image) hosts pre-built images that you can [pull](#pull) and try without needing to define and configure your own.
+
+# Docker CLI <a name='cli'></a>
+
+# pull <a name='pull'></a>
+- docker pull
 ## Build docker image from dockerfile
 docker build -t image_name:image_tag .
 ## Remover docker image
