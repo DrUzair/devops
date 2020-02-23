@@ -4,13 +4,14 @@
 - CLI (#cli)
 - Commands
   - [pull](#pull)
-  - [build](#build)
-  - [rmi](#rmi)
-  - [run](#run)
-  - [stop](#stop)
-  - [rm](#rm)
-  - [ps](#ps)
-  - [exec](#exec)
+  - [build](#build): Build an image from a Dockerfile
+    - [images](#images): List images
+    - [rmi](#rmi): Remove one or more images
+  - [run](#run): Run a command in a new container
+  - [rm](#rm): Remove one or more containers
+  - [exec](#exec): Run a command in a running container
+    - [ps](#ps)
+    - [stop](#stop)
   
 # Docker Story <a name='story'></a>
   - Components
@@ -59,7 +60,7 @@ docker commit image_id containe_name
 ## list of containers <a name='ps'></a>
 docker ps
 [Top](#top)
-## list of images
+## list of images <a name='images'></a>
 docker images
 [Top](#top)
 ## run a container <a name='exec'></a>
