@@ -1,5 +1,5 @@
 # ToC <a name='Top'></a>
-- Story(#story)
+- [Story](#story)
 - [Docker hub](#hub)
 - CLI (#cli)
 - Commands
