@@ -10,6 +10,7 @@
   - [stop](#stop)
   - [rm](#rm)
   - [ps](#ps)
+  - [exec](#exec)
   
 # Docker Story <a name='story'></a>
   - Actors
@@ -52,7 +53,7 @@ docker ps
 ## list of images
 docker images
 
-## run a container
+## run a container <a name='exec'></a>
 docker exec -ti container_id /bin/bash
 
 ## link host's folder (/media/data) to docker-image (/root/sharedfolder)
