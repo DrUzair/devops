@@ -7,7 +7,7 @@
   - [build](#build): Build an image from a Dockerfile
     - [images](#images): List images
     - [rmi](#rmi): Remove one or more images
-  - [run](#run): Run a command in a new container
+  - [run](#run): Create a new container and run a command in new container
   - [rm](#rm): Remove one or more containers
   - [exec](#exec): Run a command in a running container
     - [ps](#ps)
@@ -43,8 +43,17 @@ docker build -t image_name:image_tag .
 docker rmi image_id
 
 [Top](#top)
-## start a new container from image (id) <a name='run'></a>
-docker run --name container_name -i -t img_id /bin/bash
+## start a new container from image (name or id) <a name='run'></a>
+```shell
+docker run -it --rm container_name --name container_name img_id /bin/bash
+```
+or
+```shell
+docker run -it --rm container_name --name container_name <IMAGE_NAME>:<TAG> /bin/bash
+```
+- -it for interactive
+- --rm: removes the container if it's already running
+- --name: name of the container
 
 [Top](#top)
 ### run docker as nvidia docker
@@ -61,7 +70,10 @@ docker stop container_id
 [Top](#top)
 ## remove a container <a name='rm'></a>
 docker rm container_id
-
+- remove all stopped containers
+  ```shell
+  docker rm $(docker ps -a -q)
+  ```
 [Top](#top)
 ## create an image from container
 docker commit container_id a_name_for_the_image
@@ -69,10 +81,13 @@ docker commit image_id containe_name
 
 [Top](#top)
 ## list of containers <a name='ps'></a>
-- docker ps
-- remove all stopped containers
+- List running containers
   ```shell
-  docker rm $(docker ps -a -q)
+  docker ps
+  ```
+- List all stopped containers
+  ```shell
+  docker ps -a -q
   ```
 
 [Top](#top)
