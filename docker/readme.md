@@ -69,7 +69,11 @@ docker commit image_id containe_name
 
 [Top](#top)
 ## list of containers <a name='ps'></a>
-docker ps
+- docker ps
+- remove all stopped containers
+  ```shell
+  docker rm $(docker ps -a -q)
+  ```
 
 [Top](#top)
 ## list of images <a name='images'></a>
