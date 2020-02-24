@@ -10,8 +10,9 @@
   - [run](#run): Create a new container and run a command in new container
   - [rm](#rm): Remove one or more containers
   - [exec](#exec): Run a command in a running container
-    - [ps](#ps)
-    - [stop](#stop)
+  - [ps](#ps)
+  - [stop](#stop)
+  - [start](#start)
   
 # Docker Story <a name='story'></a>
   - Components
@@ -66,6 +67,14 @@ docker run --name container_name --runtime=nvidia -p 0.0.0.0:6060:6060 -v /path/
 [Top](#top)
 ## stop a container <a name='stop'></a>
 docker stop container_id
+
+[Top](#top)
+
+## start a container <a name='start'></a>
+```shell
+docker start -i container_id
+```
+- -i:interactive
 
 [Top](#top)
 ## remove a container <a name='rm'></a>
